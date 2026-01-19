@@ -1,2 +1,2 @@
 python3 -c "from TTS.api import TTS; tts = TTS('tts_models/multilingual/multi-dataset/xtts_v2'); print('Modelo descargado')"
-sed -i 's/return torch.load(f, map_location=map_location, \*\*kwargs)/return torch.load(f, map_location=map_location, weights_only=False, **kwargs)/' /root/miniconda3/envs/coqui/bin/python/site-packages/TTS/utils/io.py
+sed -i 's/return torch.load(f, map_location=map_location, \*\*kwargs)/return torch.load(f, map_location=map_location, weights_only=False, **kwargs)/' /root/miniconda3/envs/coqui/lib/python3.10/site-packages/TTS/utils/io.py
